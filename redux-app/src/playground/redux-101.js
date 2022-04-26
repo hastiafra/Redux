@@ -23,32 +23,35 @@ const setCount = ({ count }) => {
   };
 };
 
-const store = createStore((state = { count: 0 }, action) => {
-  switch (action.type) {
-    case "INCREMENT":
-      //   const incrementBy =
-      //     typeof action.incrementBy === "number" ? action.incrementBy : 1;
 
-      return { count: state.count + action.incrementBy };
-
-    case "DECREMENT":
-      //   const decrementBy =
-      //     typeof action.decrementBy === "number" ? action.decrementBy : 1;
-
-      return { count: state.count - action.decrementBy };
-
-    case "SET":
-      return {
-        count: action.count,
-      };
-
-    case "RESET":
-      return { count: 0 };
-
-    default:
-      return state;
+const reducerCount =  (state = { count: 0 }, action) => {
+    switch (action.type) {
+      case "INCREMENT":
+        //   const incrementBy =
+        //     typeof action.incrementBy === "number" ? action.incrementBy : 1;
+  
+        return { count: state.count + action.incrementBy };
+  
+      case "DECREMENT":
+        //   const decrementBy =
+        //     typeof action.decrementBy === "number" ? action.decrementBy : 1;
+  
+        return { count: state.count - action.decrementBy };
+  
+      case "SET":
+        return {
+          count: action.count,
+        };
+  
+      case "RESET":
+        return { count: 0 };
+  
+      default:
+        return state;
+    }
   }
-});
+
+const store = createStore(reducerCount);
 
 const unsubscribe = store.subscribe(() => {
   console.log(store.getState());
