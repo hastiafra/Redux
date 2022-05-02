@@ -1,11 +1,11 @@
 
-import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        
+
+  console.log("app.js")
+  return (<div>
+      <header>
+        hi
       </header>
     </div>
   );

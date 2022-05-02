@@ -8,7 +8,26 @@
  */
 /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/***/ (function(__unused_webpack_module, exports) {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\n\nfunction App() {\n  console.log(\"app.js\");\n  return /*#__PURE__*/React.createElement(\"div\", null, /*#__PURE__*/React.createElement(\"header\", null, \"hi\"));\n}\n\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://redux-app/./src/App.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
 /******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/App.js"](0, __webpack_exports__);
 /******/ 	
 /******/ })()
 ;
