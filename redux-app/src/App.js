@@ -1,9 +1,9 @@
-
+import './App.css' 
 
 function App() {
 
-  console.log("app.js")
-  return (<div>
+
+  return (<div className="App">
       <header>
         hi
       </header>
